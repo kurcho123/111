@@ -457,7 +457,6 @@ end
 -- REPUTATION ROBBERIES
 
 lib.callback.register('sp-houserobbery:client:can-start-job', function()
-    print(CanStartJob, exports["sp-blackmarket-encrypted"]:CanPlayerInteract("isRobber", true), CurrentCops >= Config.CopsNeeded)
     return CanStartJob and exports["sp-blackmarket-encrypted"]:CanPlayerInteract("isRobber", true) and CurrentCops >= Config.CopsNeeded
 end)
 
@@ -476,7 +475,11 @@ function HackTokis(tokisId)
             animDict = 'anim@heists@prison_heiststation@cop_reactions',
             anim = 'cop_b_idle',
         }, {}, {}, function()
-            local success = exports['sp-minigame']:SkillCheck(50, 5000, {'w','a','s','w','l','k','n','b'}, 1, 20, 3) --SkillCheck(speed(milliseconds), time(milliseconds), keys(string or table), rounds(number), bars(number), safebars(number))
+            local blocks = 1
+            if QBCore.Functions.GetPlayerData()["metadata"]["isHacker"] == true then
+                blocks = 3
+            end
+            local success = exports['sp-minigame']:SkillCheck(50, 5000, {'w','a','s','w','l','k','n','b'}, 1, 20, blocks) --SkillCheck(speed(milliseconds), time(milliseconds), keys(string or table), rounds(number), bars(number), safebars(number))
             if success then
                 tokisLocationInfo.HacksDone = tokisLocationInfo.HacksDone + 1
                 TriggerServerEvent("sp-houserobbery:server:update-tokis-location-hacks", tokisId)
@@ -855,7 +858,7 @@ end)
 
 RegisterNetEvent("sp-houserobbery:client:cooldown-player", function()
     CanStartJob = false
-    Citizen.SetTimeout(900000, function()
+    Citizen.SetTimeout(3600000, function()
         CanStartJob = true
     end)
 end)
@@ -868,7 +871,7 @@ RegisterNetEvent("sp-houserobbery:client:clear-everything", function()
     OtherInteractsIds = {}
 
     CanStartJob = false
-    Citizen.SetTimeout(900000, function()
+    Citizen.SetTimeout(3600000, function()
         CanStartJob = true
     end)
 end)

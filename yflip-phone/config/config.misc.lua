@@ -73,4 +73,4 @@ Config.YBuy.Categories = { -- Categories for the YBuy app when creating a new ad
 Config.QuickShare = {}
 -- Whether to show the full name of the player when sharing a contact. Default *true.
 -- If false, only the ID will be shown.
-Config.QuickShare.ShowFullName = true
+Config.QuickShare.ShowFullName = false

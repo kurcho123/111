@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js" integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+    <script src="https://use.fortawesome.com/1ce05b4b.js"></script>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js" type="text/javascript"></script>
+    <title>Quasar Garages</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="rotate" onmousedown="openRotate(event)" onmouseup="closeRotate(event)" onmousemove="mouseMove(event)"></section>
+    <section id="card">
+        <header class="card-header">
+            <div class='card-img-header'>
+                <img class="logo" src='images/default.webp' width=42 height=42 />
+            </div>
+            <div class="card-content">
+                <div class="card-plate">
+                    <a class="card-content-plate text-sm">ABC 123</a>
+                </div>
+                <a style='place-self: center;' class="card-content-name">Nissan</a>
+            </div>
+        </header>
+        <article class="progressbars">
+            <div class="card-progressbar-container">
+                <h1 class="progressbar-header text-sm" id="prog-top-speed">Top Speed</h1>
+                <div class="card-progressbar">
+                    <div class="progressbar-fill top-speed"></div>
+                </div>
+            </div>
+            <div class="card-progressbar-container">
+                <h1 class="progressbar-header text-sm" id="prog-acceleration">Acceleration</h1>
+                <div class="card-progressbar">
+                    <div class="progressbar-fill acceleration"></div>
+                </div>
+            </div>
+            <div class="card-progressbar-container">
+                <h1 class="progressbar-header text-sm" id="prog-traction">Traction</h1>
+                <div class="card-progressbar">
+                    <div class="progressbar-fill traction"></div>
+                </div>
+            </div>
+            <div class="card-progressbar-container">
+                <h1 class="progressbar-header text-sm" id="prog-brakes">Brakes</h1>
+                <div class="card-progressbar">
+                    <div class="progressbar-fill brakes"></div>
+                </div>
+            </div>
+            <!-- <div class="card-progressbar-container">
+                <h1 class="progressbar-header text-sm" id="prog-fuel">Fuel Level</h1>
+                <div class="card-progressbar">
+                    <div class="progressbar-fill fuel-level"></div>
+                </div>
+            </div> -->
+            <div class="card-progressbar-container">
+                <h1 class="progressbar-header text-sm" id="prog-engine">Engine Health</h1>
+                <div class="card-progressbar">
+                    <div class="progressbar-fill engine-health"></div>
+                </div>
+            </div>
+            <div class="card-progressbar-container">
+                <h1 class="progressbar-header text-sm" id="prog-body">Body Health</h1>
+                <div class="card-progressbar">
+                    <div class="progressbar-fill body-health"></div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="impound">
+        <button class="modal-button text-sm" onclick="closeImpound()" type="button">
+            <svg style="width: 20px; height: 20px" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd"></path>
+            </svg>
+        </button>
+        <form action="#" id="impound-form">
+            <label id="send-to">Select impound spot</label>
+            <select id="garages-select" class="minimal">
+                <option value="garage-impound" id="impound-option">Impound</option>
+            </select>
+            <input id="impound-time" type="number" placeholder="Time..." required>
+            <label for="can-get" id="impound-paying">Can get the car by paying</label>
+            <select id="can-get" class="minimal">
+                <option value="yes" class="option-yes">Yes</option>
+                <option value="no" class="option-no">No</option>
+            </select>
+            <input id="impound-price" type="number" placeholder="Price" required>
+            <input type="text" id="note" placeholder="Note" required>
+            <button type="submit" id="impound-submit">Submit</button>
+        </form>
+    </section>
+    <section id="menu">
+        <div class='card-cinematic-cam'>
+            <img class="cinematic" src='https://media.discordapp.net/attachments/1042987814616301668/1113649515153604659/3123.png' />
+        </div>
+        <div class="rotate-directions">
+            <i class="fa-solid fa-right-long-to-line directions-right"></i>
+            <i class="fa-solid fa-left-long-to-line directions-left"></i>
+        </div>
+        <header class="menu-header">
+            <div class="menu-header-content">
+                <button class="button" id="option-star" onclick="setStar()">Set Star</button>
+                <button class="button" id="option-tag" onclick="setTagModal()">Set Tag</button>
+                <button class="button" id="option-send" onclick="transferVehicleModal()">Send Vehicle Other Garage</button>
+                <button class="button" id="option-transfer" onclick="transferVehicleToPlayerModal()">Transfer Vehicle To Player</button>
+                <button class="button" id="option-out" onclick="openOutModal()">Out Vehicles</button>
+            </div>
+            <div class="menu-header-infos">
+                <div class="information-right">
+                    <i id="vehicle-isCar" class="fa-solid fa-car"></i>
+                    <a id="menu-total-vehicle">35</a>
+                </div>
+                <div class="button-fav">
+                    <i id="vehicle-isStar" class="fa-solid fa-star"></i>
+                </div>
+                <div class="button-money">
+                    <div class="lateral-space">
+                        <div class="money">$200</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <article class="menu-container">
+            <header>
+                <div class="header-interior">
+                    <section class="information">
+                        <div class="information-header">
+                            <a class="brand" id="menu-brand">Car</a>
+                            <a id="menu-name">Adder</a>
+                        </div>
+                        <div class="information-container">
+                            <div>
+                                <a id="menu-plate">ABC 123</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="information-brand">
+                        <div class="logo-header">
+                            <img id="menu-logo" src='images/Nissan.png' alt="Image Alt" width=62 height=62 />
+                        </div>
+                    </section>
+                </div>
+            </header>
+            <div class="tag-container">
+                <i class="fa-solid fa-tag"></i>
+                <span class="vehicle-tag">Tag Example yey</span>
+            </div>
+            <article class="menu-informations">
+                <div class="progressbar-container">
+                    <h1 class="progressbar-header text-sm" id="garage-power">POWER</h1>
+                    <div class="progressbar">
+                        <div class="progressbar-fill top-speed"></div>
+                        <div class="progressbar-text-container">
+                            <div class="progressbar-text top-speed-text"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progressbar-container">
+                    <h1 class="progressbar-header text-sm" id="garage-acceleration">ACCELERATION</h1>
+                    <div class="progressbar">
+                        <div class="progressbar-fill acceleration"></div>
+                        <div class="progressbar-text-container">
+                            <div class="progressbar-text acceleration-text"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progressbar-container">
+                    <h1 class="progressbar-header text-sm" id="garage-traction">TRACTION</h1>
+                    <div class="progressbar">
+                        <div class="progressbar-fill traction"></div>
+                        <div class="progressbar-text-container">
+                            <div class="progressbar-text traction-text"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progressbar-container">
+                    <h1 class="progressbar-header text-sm" id="garage-brakes">BRAKES</h1>
+                    <div class="progressbar">
+                        <div class="progressbar-fill brakes"></div>
+                        <div class="progressbar-text-container">
+                            <div class="progressbar-text brakes-text"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <hr>
+            <div class="menu-buttons">
+                <article id="public-garage-interactions" class="menu-interactions">
+                    <button class="button disabled" id="drive-vehicle" onclick="driveVehicleModal()">Drive Vehicle</button>
+                    <button class="button" id="pay-impound-price" onclick="payVehiclePrice()">Pay Vehicle's Impound Price</button>
+                </article>
+            </div>
+            <div id="impound-data">
+                <a id="menu-price">Takeout Price: 35000$</a>
+                <a id="menu-takeout-with-price">Takeout With Price: No</a>
+                <a id="menu-takeout-time">Takeout Time: 15 Minute</a>
+                <a id="menu-note">Note: Note example</a>
+            </div>
+        </article>
+        <div class="loading-container">
+            <!-- Auto Generate -->
+        </div>
+        <footer class="menu-footer">
+            <div class="menu-footer-content">
+                <article class="menu-footer-text-container">
+                    <div class="menu-footer-text">
+                        <a slot="width: 24px; height: 24px;" style="font-weight:600">ESC</a>
+                    </div>
+                    <a class="exit-garage">EXIT GARAGE</a>
+                </article>
+                <article class="menu-footer-text-container">
+                    <div class="menu-footer-text">
+                        <a slot="width: 24px; height: 24px;" style="font-weight:600">F9</a>
+                    </div>
+                    <a class="inspec-garage">FREE MODE</a>
+                </article>
+                <article class="menu-footer-text-container toggle-music">
+                    <!-- <div class="menu-footer-text">
+                        <a slot="width: 24px; height: 24px;" style="font-weight:600">P</a>
+                    </div>
+                    <a class="music-garage">TOGGLE MUSIC</a> -->
+                </article>
+                <article class="menu-footer-text-container prev-garage">
+                    <div class="menu-footer-text">
+                        <i class="fa-sharp fa-solid fa-caret-left"></i>
+                    </div>
+                    <a id="prev-garage">PREVIOUS VEHICLE</a>
+                </article>
+                <article class="menu-footer-text-container next-garage">
+                    <div class="menu-footer-text">
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                    <a id="next-garage">NEXT VEHICLE</a>
+                </article>
+            </div>
+        </footer>
+    </section>
+    <section id="modal">
+        <div class="modal-container">
+            <div class="modal-container3">
+                <button class="modal-button text-sm" onclick="closeModal()" type="button">
+                    <svg style="width: 20px; height: 20px" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd"></path>
+                    </svg>
+                </button>
+                <section id="popup-modal" style="padding: 24px; text-align: center; display: none;">
+                    <svg style="margin-left: auto; margin-right: auto; width: 56px; height: 56px;" class="mx-auto mb-4 w-14 h-14 text-gray-400 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <h3 id="popup-modal-header" style="font-weight: 400; color: rgb(156 163 175 / 1)">The guy who wrote this</h3>
+                    <section class="modal-button-container">
+                        <button class="button" id="popup-modal-confirm">Drive Vehicle</button>
+                        <button class="button" id="popup-modal-cancel" onclick="closeModal()">No, Cancel</button>
+                    </section>
+                </section>
+                <section id="menu-modal" style="overflow-y: auto; overflow-x: hidden; width: 100%; display: none;">
+                    <div>
+                        <div class="send-vehicle-menu">
+                            <div class="send-menu-title" style="padding-top: 16px; padding-bottom: 5px; font-weight: 500; color: #fff;">
+                                <h3 id="menu-modal-header" slot="font-weight: 600">Title</h3>
+                            </div>
+                            <div class="send-container-interior">
+                                <p id="menu-modal-description" style="color: rgb(156 163 175 / 1)" className="text-sm">Description</p>
+                                <div class="search-input">
+                                    <input type="text" id="search-input" placeholder="Search...">
+                                </div>
+                                <ul id="menu-modal-container" style="margin-top: 1rem; margin-bottom: 1rem; overflow: auto; max-height: 400px; padding: 8px; border-radius: 6px;" className="scrollbar-custom">
+                                </ul>
+                                <p id="no-results" style="display: none; color: red;">No results</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="form-modal" style="padding: 1.5rem; display: none;">
+                    <h3 id="tag-vehicle-title" style="margin-bottom: 16px; font-size: 20px; color: #ffff;">Tag Vehicle</h3>
+                    <div class="tag-container-interior">
+                        <div style="margin-bottom: 24px;">
+                            <label htmlFor="name" className="text-sm" id="tag-description" style="color: rgb(156 163 175 / 1)">Tag Description</label>
+                            <input type="name" name="name" id="tag" value='' className="text-sm" placeholder="My Car Title" required />
+                        </div>
+                        <button class="button" id="set-tag-button" onclick="setTag()">Set Tag</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

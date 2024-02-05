@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CVehicleModelInfoVariation>
+  <variationData>
+    <Item>
+      <modelName>boxville7</modelName>
+      <colors>
+        <Item>
+          <indices content="char_array">
+            <Item value="111" />
+            <Item value="73" />
+            <Item value="111" />
+            <Item value="73" />
+          </indices>
+          <liveries>
+            <Item value="true" />
+            <Item value="false" />
+          </liveries>
+        </Item>
+        <Item>
+          <indices content="char_array">
+            <Item value="98" />
+            <Item value="98" />
+            <Item value="98" />
+            <Item value="156" />
+          </indices>
+          <liveries>
+            <Item value="false" />
+            <Item value="true" />
+          </liveries>
+        </Item>
+      </colors>
+      <kits />
+      <windowsWithExposedEdges />
+      <plateProbabilities>
+        <Probabilities>
+          <Item>
+            <Name>standard white</Name>
+            <Value value="70" />
+          </Item>
+          <Item>
+            <Name>white plate 2</Name>
+            <Value value="30" />
+          </Item>
+        </Probabilities>
+      </plateProbabilities>
+      <lightSettings value="0" />
+      <sirenSettings value="0" />
+    </Item>
+  </variationData>
+</CVehicleModelInfoVariation>

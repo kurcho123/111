@@ -1,0 +1,352 @@
+/* Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+
+/* Gilroy */
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy/Gilroy-Thin.ttf");
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy/Gilroy-ThinItalic.ttf");
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy/Gilroy-UltraLight.ttf");
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy/Gilroy-UltraLightItalic.ttf");
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy/Gilroy-Light.ttf");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy/Gilroy-LightItalic.ttf");
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy/Gilroy-Regular.ttf");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy/Gilroy-RegularItalic.ttf");
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy/Gilroy-Medium.ttf");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy/Gilroy-MediumItalic.ttf");
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy/Gilroy-SemiBold.ttf");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy/Gilroy-SemiBoldItalic.ttf");
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy/Gilroy-Bold.ttf");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy/Gilroy-BoldItalic.ttf");
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy/Gilroy-ExtraBold.ttf");
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy/Gilroy-ExtraBoldItalic.ttf");
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy/Gilroy-Black.ttf");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy/Gilroy-BlackItalic.ttf");
+	font-weight: 900;
+	font-style: italic;
+}
+
+/* Akrobat */
+@font-face {
+	font-family: "Akrobat";
+	src: url("../fonts/Akrobat/Akrobat-Thin.ttf");
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Akrobat";
+	src: url("../fonts/Akrobat/Akrobat-ExtraLight.ttf");
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Akrobat";
+	src: url("../fonts/Akrobat/Akrobat-Light.ttf");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Akrobat";
+	src: url("../fonts/Akrobat/Akrobat-Regular.ttf");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Akrobat";
+	src: url("../fonts/Akrobat/Akrobat-SemiBold.ttf");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Akrobat";
+	src: url("../fonts/Akrobat/Akrobat-Bold.ttf");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Akrobat";
+	src: url("../fonts/Akrobat/Akrobat-Black.ttf");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Morganite */
+@font-face {
+	font-family: "Morganite";
+	src: url("../fonts/Morganite/Morganite-Thin.woff");
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Morganite";
+	src: url("../fonts/Morganite/Morganite-ThinItalic.woff");
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Morganite";
+	src: url("../fonts/Morganite/Morganite-ExtraLight.woff");
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Morganite";
+	src: url("../fonts/Morganite/Morganite-ExtraLightItalic.woff");
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Morganite";
+	src: url("../fonts/Morganite/Morganite-Light.woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Morganite";
+	src: url("../fonts/Morganite/Morganite-LightItalic.woff");
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Morganite";
+	src: url("../fonts/Morganite/Morganite-Medium.woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Morganite";
+	src: url("../fonts/Morganite/Morganite-MediumItalic.woff");
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Morganite";
+	src: url("../fonts/Morganite/Morganite-SemiBold.woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Morganite";
+	src: url("../fonts/Morganite/Morganite-SemiBoldItalic.woff");
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Morganite";
+	src: url("../fonts/Morganite/Morganite-Bold.woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Morganite";
+	src: url("../fonts/Morganite/Morganite-BoldItalic.woff");
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Morganite";
+	src: url("../fonts/Morganite/Morganite-ExtraBold.woff");
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Morganite";
+	src: url("../fonts/Morganite/Morganite-ExtraBoldItalic.woff");
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Morganite";
+	src: url("../fonts/Morganite/Morganite-Black.woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Morganite";
+	src: url("../fonts/Morganite/Morganite-BlackItalic.woff");
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+    font-family: GilroyBold;
+    src: url("../fonts/Gilroy/Gilroy-Bold.ttf");
+}
+
+@font-face {
+    font-family: GilroyLight;
+    src: url("../fonts/Gilroy/Gilroy-Light.ttf");
+}
+
+@font-face {
+    font-family: GilroyMedium;
+    src: url("../fonts/Gilroy/Gilroy-Medium.ttf");
+}
+
+@font-face {
+    font-family: GilroyThin;
+    src: url("../fonts/Gilroy/Gilroy-Thin.ttf");
+}
+
+@font-face {
+    font-family: MorganiteMedium;
+    src: url("../fonts/Morganite/Morganite-Medium.woff");
+}
+
+@font-face {
+    font-family: MontserratBold;
+    src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: MontserratRegular;
+    src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+}

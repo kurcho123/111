@@ -1,0 +1,668 @@
+{
+  "locale": "bg_BG",
+  "dateFormat": "dd-MM-yyyy HH:mm:ss",
+  "inventory": "nui://ox_inventory/web/images/",
+
+  "dashboard": {},
+
+  "citizens": {
+    "no_image": "https://snworksceo.imgix.net/dtc/3f037af6-87ce-4a37-bb37-55b48029727d.sized-1000x1000.jpg?w=1000",
+    "show_identity": true,
+    "show_licences": true,
+    "show_tags": true,
+    "show_vehicles": true,
+    "show_housing": true,
+    "show_employment": true,
+    "show_weapons": true,
+    "show_incidents": true,
+    "show_reports": true,
+    "show_gallery": true,
+    "tags": [
+      { "key": 0, "label": "Информатор", "type": "success" },
+      { "key": 1, "label": "Опасни", "type": "warning" },
+      { "key": 2, "label": "Издирва се", "type": "error" },
+      { "key": 3, "label": "Странник", "type": "info" }
+    ]
+  },
+
+  "incidents": {
+    "show_location": true,
+    "show_officers": true,
+    "show_citizens": true,
+    "show_incidents": true,
+    "show_reports": true,
+    "show_evidence": true,
+    "show_vehicles": true,
+    "show_tags": true,
+    "show_gallery": true,
+    "fine_reduction": true,
+    "jail_reduction": true,
+    "points_reduction": false,
+    "reductions": [0, 10, 25, 50, 75, 90, 100]
+  },
+
+  "reports": {
+    "show_location": true,
+    "show_officers": true,
+    "show_citizens": true,
+    "show_incidents": true,
+    "show_reports": true,
+    "show_evidence": true,
+    "show_vehicles": true,
+    "show_tags": true,
+    "show_gallery": true
+  },
+
+  "bolos": {
+    "no_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Nissan_Skyline_R34_GT-R_N%C3%BCr_001.jpg/640px-Nissan_Skyline_R34_GT-R_N%C3%BCr_001.jpg",
+    "tags": [
+      { "value": 0, "label": "Информатор", "type": "success" },
+      { "value": 1, "label": "Опасни", "type": "warning" },
+      { "value": 2, "label": "Издирва се", "type": "error" },
+      { "value": 3, "label": "Странник", "type": "info" }
+    ]
+  },
+
+  "warrants": {
+    "no_image": "https://snworksceo.imgix.net/dtc/3f037af6-87ce-4a37-bb37-55b48029727d.sized-1000x1000.jpg?w=1000",
+    "tags": [
+      { "value": 0, "label": "Информатор", "type": "success" },
+      { "value": 1, "label": "Опасни", "type": "warning" },
+      { "value": 2, "label": "Издирва се", "type": "error" },
+      { "value": 3, "label": "Странник", "type": "info" }
+    ]
+  },
+
+  "vehicles": {
+    "no_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Nissan_Skyline_R34_GT-R_N%C3%BCr_001.jpg/640px-Nissan_Skyline_R34_GT-R_N%C3%BCr_001.jpg",
+    "show_information": true,
+    "show_tags": true,
+    "show_gallery": true,
+    "show_incidents": true,
+    "show_reports": true,
+    "show_evidence": true,
+    "tags": [
+      { "key": 0, "label": "Информатор", "type": "success" },
+      { "key": 1, "label": "Опасни", "type": "warning" },
+      { "key": 2, "label": "Издирва се", "type": "error" },
+      { "key": 3, "label": "Странник", "type": "info" }
+    ]
+  },
+
+  "evidence": {
+    "show_items": true,
+    "show_officers": true,
+    "show_citizens": true,
+    "show_incidents": true,
+    "show_reports": true,
+    "show_evidence": true,
+    "show_tags": true,
+    "show_gallery": true,
+    "categories": [
+      { "value": 0, "label": "Други" },
+      { "value": 1, "label": "Кръв" },
+      { "value": 2, "label": "Гилза" },
+      { "value": 3, "label": "Оръжие" },
+      { "value": 4, "label": "Снаряд" },
+      { "value": 5, "label": "Стъкло" },
+      { "value": 6, "label": "Фрагмент от превозно средство" },
+      { "value": 7, "label": "Снимка" },
+      { "value": 8, "label": "Напрежение" }
+    ]
+  },
+
+  "legislations": {
+    "categories": [
+      { "value": 0, "label": "Икономическа политика" },
+      { "value": 1, "label": "Образование" },
+      { "value": 2, "label": "Околна среда" },
+      { "value": 3, "label": "Външна политика" },
+      { "value": 4, "label": "Здравеопазване" },
+      { "value": 5, "label": "Имиграция" },
+      { "value": 6, "label": "Труд и заетост" },
+      { "value": 7, "label": "Право и правосъдие" },
+      { "value": 8, "label": "Национална сигурност" },
+      { "value": 9, "label": "Обществено здраве" },
+      { "value": 10, "label": "Социална политика" },
+      { "value": 11, "label": "Облаги" },
+      { "value": 12, "label": "Технологии и комуникации" },
+      { "value": 13, "label": "Транспорт" },
+      { "value": 14, "label": "Делата на ветераните" },
+      { "value": 15, "label": "Селско стопанство" },
+      { "value": 16, "label": "Жилище и градско развитие" },
+      { "value": 17, "label": "Енергийна политика" },
+      { "value": 18, "label": "Граждански права" },
+      { "value": 19, "label": "Отбрана" }
+    ]
+  },
+
+  "weapon_registry": {
+    "show_evidence": true,
+    "show_tags": true,
+    "no_image": "https://snworksceo.imgix.net/dtc/3f037af6-87ce-4a37-bb37-55b48029727d.sized-1000x1000.jpg?w=1000"
+  },
+
+  "staff": {
+    "no_image": "https://snworksceo.imgix.net/dtc/3f037af6-87ce-4a37-bb37-55b48029727d.sized-1000x1000.jpg?w=1000",
+    "departments": [
+      {
+        "value": 0,
+        "label": "LSPD",
+        "job": "police",
+        "emblem": "lspd.webp",
+        "ranks": [
+          {
+            "value": 0,
+            "label": "Police Officer II",
+            "insignia": "lspd/officer_2.webp",
+            "grade": 0
+          },
+          {
+            "value": 1,
+            "label": "Police Officer III",
+            "insignia": "lspd/officer_3.webp",
+            "grade": 0
+          },
+          {
+            "value": 2,
+            "label": "Police Officer III+1",
+            "insignia": "lspd/officer_3+1.webp",
+            "grade": 0
+          },
+          {
+            "value": 3,
+            "label": "Detective I",
+            "insignia": "lspd/detective_1.webp",
+            "grade": 1
+          },
+          {
+            "value": 4,
+            "label": "Detective II",
+            "insignia": "lspd/detective_2.webp",
+            "grade": 1
+          },
+          {
+            "value": 5,
+            "label": "Detective II3",
+            "insignia": "lspd/detective_3.webp",
+            "grade": 1
+          },
+          {
+            "value": 6,
+            "label": "Sergeant I",
+            "insignia": "lspd/sergeant_1.webp",
+            "grade": 2
+          },
+          {
+            "value": 7,
+            "label": "Sergeant II",
+            "insignia": "lspd/sergeant_2.webp",
+            "grade": 2
+          },
+          {
+            "value": 8,
+            "label": "Lieutenant",
+            "insignia": "lspd/lieutenant.webp",
+            "grade": 2
+          },
+          {
+            "value": 9,
+            "label": "Captain",
+            "insignia": "lspd/captain.webp",
+            "grade": 3
+          },
+          {
+            "value": 10,
+            "label": "Commander",
+            "insignia": "lspd/commander.webp",
+            "grade": 3
+          },
+          {
+            "value": 11,
+            "label": "Deputy Chief",
+            "insignia": "lspd/deputy_chief.webp",
+            "grade": 3
+          },
+          {
+            "value": 12,
+            "label": "Assistant Chief of Police",
+            "insignia": "lspd/assistant_chief.webp",
+            "grade": 4
+          },
+          {
+            "value": 13,
+            "label": "Chief of Police",
+            "insignia": "lspd/chief.webp",
+            "grade": 5
+          }
+        ]
+      },
+      {
+        "value": 1,
+        "label": "BSCO",
+        "job": "bcso",
+        "emblem": "bsco.webp",
+        "ranks": [
+          {
+            "value": 0,
+            "label": "Deputy",
+            "insignia": "bsco/bsco.webp",
+            "grade": 0
+          },
+          {
+            "value": 1,
+            "label": "Senior Deputy",
+            "insignia": "bsco/bsco.webp",
+            "grade": 1
+          },
+          {
+            "value": 2,
+            "label": "Corporal",
+            "insignia": "bsco/bsco.webp",
+            "grade": 2
+          },
+          {
+            "value": 3,
+            "label": "Sergeant",
+            "insignia": "bsco/bsco.webp",
+            "grade": 3
+          },
+          {
+            "value": 4,
+            "label": "Lieutenant",
+            "insignia": "bsco/bsco.webp",
+            "grade": 4
+          },
+          {
+            "value": 5,
+            "label": "Captain",
+            "insignia": "bsco/bsco.webp",
+            "grade": 5
+          },
+          {
+            "value": 6,
+            "label": "Major",
+            "insignia": "bsco/bsco.webp",
+            "grade": 6
+          },
+          {
+            "value": 7,
+            "label": "Colonel",
+            "insignia": "bsco/bsco.webp",
+            "grade": 7
+          },
+          {
+            "value": 8,
+            "label": "Sheriff",
+            "insignia": "bsco/bsco.webp",
+            "grade": 8
+          }
+        ]
+      },
+      {
+        "value": 2,
+        "label": "SAST",
+        "job": "sast",
+        "emblem": "sast.webp",
+        "ranks": [
+          {
+            "value": 0,
+            "label": "Trooper",
+            "insignia": "sast/sast.webp",
+            "grade": 0
+          },
+          {
+            "value": 1,
+            "label": "Corporal",
+            "insignia": "sast/sast.webp",
+            "grade": 1
+          },
+          {
+            "value": 2,
+            "label": "Sergeant",
+            "insignia": "sast/sast.webp",
+            "grade": 2
+          },
+          {
+            "value": 3,
+            "label": "Lieutenant",
+            "insignia": "sast/sast.webp",
+            "grade": 3
+          },
+          {
+            "value": 4,
+            "label": "Captain",
+            "insignia": "sast/sast.webp",
+            "grade": 4
+          },
+          {
+            "value": 5,
+            "label": "Major",
+            "insignia": "sast/sast.webp",
+            "grade": 5
+          },
+          {
+            "value": 6,
+            "label": "Colonel",
+            "insignia": "sast/sast.webp",
+            "grade": 6
+          },
+          {
+            "value": 7,
+            "label": "Brigadier General",
+            "insignia": "sast/sast.webp",
+            "grade": 7
+          },
+          {
+            "value": 8,
+            "label": "Major General",
+            "insignia": "sast/sast.webp",
+            "grade": 8
+          },
+          {
+            "value": 9,
+            "label": "Lieutenant General",
+            "insignia": "sast/sast.webp",
+            "grade": 9
+          },
+          {
+            "value": 10,
+            "label": "General",
+            "insignia": "sast/sast.webp",
+            "grade": 10
+          }
+        ]
+      },
+      {
+        "value": 3,
+        "label": "Ranger",
+        "job": "ranger",
+        "emblem": "ranger.webp",
+        "ranks": [
+          {
+            "value": 0,
+            "label": "Ranger",
+            "insignia": "ranger/ranger.webp",
+            "grade": 0
+          },
+          {
+            "value": 1,
+            "label": "Ranger First Class",
+            "insignia": "ranger/ranger.webp",
+            "grade": 1
+          },
+          {
+            "value": 2,
+            "label": "Corporal",
+            "insignia": "ranger/ranger.webp",
+            "grade": 2
+          },
+          {
+            "value": 3,
+            "label": "Sergeant",
+            "insignia": "ranger/ranger.webp",
+            "grade": 3
+          },
+          {
+            "value": 4,
+            "label": "Lieutenant",
+            "insignia": "ranger/ranger.webp",
+            "grade": 4
+          },
+          {
+            "value": 5,
+            "label": "Captain",
+            "insignia": "ranger/ranger.webp",
+            "grade": 5
+          },
+          {
+            "value": 6,
+            "label": "Major",
+            "insignia": "ranger/ranger.webp",
+            "grade": 6
+          },
+          {
+            "value": 7,
+            "label": "Colonel",
+            "insignia": "ranger/ranger.webp",
+            "grade": 7
+          },
+          {
+            "value": 8,
+            "label": "Chief Ranger",
+            "insignia": "ranger/ranger.webp",
+            "grade": 8
+          }
+        ]
+      },
+      {
+        "value": 4,
+        "label": "FBI",
+        "job": "fbi",
+        "emblem": "fbi.webp",
+        "ranks": [
+          {
+            "value": 0,
+            "label": "Inferior Agent",
+            "insignia": "fbi/fbi.webp",
+            "grade": 0
+          },
+          {
+            "value": 1,
+            "label": "Superior Agent",
+            "insignia": "fbi/fbi.webp",
+            "grade": 1
+          },
+          {
+            "value": 2,
+            "label": "Special Agent",
+            "insignia": "fbi/fbi.webp",
+            "grade": 2
+          },
+          {
+            "value": 3,
+            "label": "Director of Bureau",
+            "insignia": "fbi/fbi.webp",
+            "grade": 3
+          }
+        ]
+      }
+    ],
+    "sop": {
+      "categories": [
+        { "value": 0, "label": "Общи процедури" },
+        { "value": 1, "label": "Патрулни процедури" },
+        { "value": 2, "label": "Регулиране на движението" },
+        { "value": 3, "label": "Процедури при задържане" },
+        { "value": 4, "label": "Процедури при разследване" },
+        { "value": 5, "label": "Спешен отговор" },
+        { "value": 6, "label": "Използване на сила" },
+        { "value": 7, "label": "Използване на оборудване" },
+        { "value": 8, "label": "Сътрудничество с други органи" },
+        { "value": 9, "label": "Обучение и образование" },
+        { "value": 10, "label": "Конфиденциалност и обработка на информация" },
+        { "value": 11, "label": "Ангажиране с общността" }
+      ]
+    }
+  },
+
+  "configurations": {
+    "staff": {
+      "no_image": "https://snworksceo.imgix.net/dtc/3f037af6-87ce-4a37-bb37-55b48029727d.sized-1000x1000.jpg?w=1000",
+      "show_alias": true,
+      "show_callsign": true,
+      "show_badgenumber": true,
+      "show_rank": true,
+      "show_department": true,
+      "show_roles": true,
+      "show_activity": true,
+      "show_incidents": true,
+      "show_reports": true,
+      "show_evidence": true
+    },
+    "categories": {
+      "swatches": [
+        "rgb(0, 0, 0)",
+        "rgb(24, 160, 88)",
+        "rgb(32, 128, 240)",
+        "rgb(240, 160, 32)",
+        "rgb(208, 48, 80)"
+      ]
+    },
+    "tags": [
+      {
+        "id": 1,
+        "label": "Откраднато превозно средство",
+        "color": "#4d4dff",
+        "identifier": 6
+      },
+      { "id": 2, "label": "Бягство", "color": "#b30000", "identifier": 3 },
+      { "id": 3, "label": "Нападение", "color": "#ff4d4d", "identifier": 3 },
+      { "id": 4, "label": "Графити", "color": "#808080", "identifier": 3 },
+      {
+        "id": 5,
+        "label": "Влизане с взлом",
+        "color": "#ff8c1a",
+        "identifier": 3
+      },
+      { "id": 6, "label": "Обир", "color": "#660066", "identifier": 3 },
+      { "id": 7, "label": "Вандализъм", "color": "#ff1a1a", "identifier": 3 },
+      { "id": 8, "label": "Стрелба", "color": "#cc0000", "identifier": 3 },
+      {
+        "id": 9,
+        "label": "Подозрителна дейност",
+        "color": "#e6e600",
+        "identifier": 4
+      },
+      {
+        "id": 10,
+        "label": "Жалба за шум",
+        "color": "#b3b3b3",
+        "identifier": 4
+      },
+      { "id": 11, "label": "Наркотици", "color": "#262626", "identifier": 7 },
+      { "id": 12, "label": "Оръжия", "color": "#ff9999", "identifier": 7 },
+      {
+        "id": 13,
+        "label": "Кръвни петна",
+        "color": "#800000",
+        "identifier": 7
+      },
+      {
+        "id": 14,
+        "label": "Пръстови отпечатъци",
+        "color": "#ffcc00",
+        "identifier": 7
+      },
+      { "id": 15, "label": "Стъпки", "color": "#999999", "identifier": 7 },
+      {
+        "id": 16,
+        "label": "Известен с графитите",
+        "color": "#808080",
+        "identifier": null
+      },
+      {
+        "id": 17,
+        "label": "Известен с употребата на наркотици",
+        "color": "#262626",
+        "identifier": null
+      },
+      {
+        "id": 18,
+        "label": "Известен с Нападение",
+        "color": "#ff4d4d",
+        "identifier": null
+      },
+      {
+        "id": 19,
+        "label": "Известен с грабежи",
+        "color": "#660066",
+        "identifier": null
+      },
+      {
+        "id": 20,
+        "label": "Известен със взлом",
+        "color": "#ff8c1a",
+        "identifier": null
+      },
+      {
+        "id": 21,
+        "label": "Известен с кражба на превозно средство",
+        "color": "#4d4dff",
+        "identifier": null
+      },
+      {
+        "id": 22,
+        "label": "Известен гангстер",
+        "color": "#b30000",
+        "identifier": null
+      },
+      {
+        "id": 23,
+        "label": "Известен член на бандата 'Ballas'",
+        "color": "#990099",
+        "identifier": null
+      },
+      {
+        "id": 24,
+        "label": "Известен член на бандата 'Vagos'",
+        "color": "#008080",
+        "identifier": null
+      },
+      {
+        "id": 25,
+        "label": "Известен член на бандата 'Marabunta Grande'",
+        "color": "#ff751a",
+        "identifier": null
+      },
+      {
+        "id": 26,
+        "label": "Известен член на бандата 'Aztecas'",
+        "color": "#ff33ff",
+        "identifier": null
+      },
+      {
+        "id": 27,
+        "label": "Известен член на бандата 'Triads'",
+        "color": "#33ff33",
+        "identifier": null
+      },
+      {
+        "id": 28,
+        "label": "Известен член на бандата 'Yakuza'",
+        "color": "#ff80bf",
+        "identifier": null
+      },
+      {
+        "id": 29,
+        "label": "Известен член на мафията",
+        "color": "#262626",
+        "identifier": null
+      },
+      {
+        "id": 30,
+        "label": "Неизвестна принадлежност към банда",
+        "color": "#b3b3b3",
+        "identifier": null
+      }
+    ]
+  },
+
+  "add_user": {
+    "no_image": "https://snworksceo.imgix.net/dtc/3f037af6-87ce-4a37-bb37-55b48029727d.sized-1000x1000.jpg?w=1000"
+  },
+
+  "editor": {
+    "colors": [
+      { "label": "Default", "value": "rgba(255, 255, 255, 0.82)" },
+      { "label": "Black", "value": "black" },
+      { "label": "Red", "value": "red" },
+      { "label": "Green", "value": "green" },
+      { "label": "Blue", "value": "blue" }
+    ]
+  },
+
+  "error403": {
+    "image": "https://i.imgur.com/0tykmxD.gif"
+  }
+}

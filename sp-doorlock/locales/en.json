@@ -1,0 +1,18 @@
+{
+  "unlocked_door": "Вратата беше отключена",
+  "locked_door": "Вратата беше заключена",
+  "lock_door": "[E] - Заключи",
+  "unlock_door": "[E] - Отключи",
+  "door_lock": "Ключалка",
+  "passcode": "Код за достъп",
+  "lockpick_broke": "Вашият шперц се счупи",
+  "pick_lock": "Разбий ключалката",
+  "add_lock": "Добави ключалка",
+  "edit_lock": "Промени ключалка",
+  "remove_lock": "Премахни ключалка",
+  "cannot_unlock": "Не успя да отключиш вратата",
+  "cannot_lock": "Не успя да заключиш вратата",
+  "create_modify_lock": "Създай ключалка или промени вече съществуващата такава",
+  "add_door_textui": "**Create new door**  \nНатисни [LMB]  \nОткажи с [RMB]",
+  "command_closest": "Open UI directly to closest doorlock"
+}

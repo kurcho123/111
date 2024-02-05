@@ -1,0 +1,113 @@
+body {
+  overflow: hidden;
+  margin: 0;
+}
+
+/* UI Text */
+
+.textuiContainer {
+  width: fit-content;
+  height: 3.4rem;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  flex-shrink: 0;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 2vh;
+  border-radius: 5px;
+  background: #111112;
+}
+
+.textuiContainer h1 {
+  color: #C9C9C9;
+  font-family: Roboto;
+  font-size: 17px;
+  padding: 15px;
+  font-style: normal;
+  margin: auto;
+  text-align: center;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Yeni Notify */
+
+.NotifyPart {
+  background: transparent;
+  width: fit-content;
+  padding-right: 2vh;
+  height: 95vh;
+  float: right;
+}
+
+.NotifyRow {
+  display: none;
+}
+
+.NotifyContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26vh;
+  max-width: 100vh;
+  margin-top: 1vh;
+  height: fit-content;
+  padding-right: 2vh;
+  position: relative;
+  padding-bottom: 0.7vh;
+  background: #1d1f22;
+  border-radius: 9px;
+  top: 2vh;
+}
+
+.NotifyContent {
+  flex: 1;
+}
+
+.NotifyContainer h3 {
+  margin: auto;
+  font-size: 4.2vh;
+  margin-left: 2vh;
+  padding-top: 2%;
+  float: left;
+  color: #0dd571;
+}
+
+
+.NotifyContainer h4 {
+  color: #C6C6C6;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  position: relative;
+  left: 2vh;
+  top: 1vh;
+}
+
+.NotifyContainer p {
+  color: #949494;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  padding-left: 6vh;
+  padding-right: 1vh;
+  position: relative;
+  font-weight: 500;
+  left: 2vh;
+  line-height: normal;
+}
+
+@keyframes slide-in {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+

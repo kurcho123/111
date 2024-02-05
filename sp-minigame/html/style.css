@@ -1,0 +1,318 @@
+@font-face {
+    font-family: digital;
+    src: url("./fonts/digital.ttf");
+  }
+
+body {
+    overflow: hidden;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.MinigameBackground {
+    position: absolute;
+    resize: both;
+    padding: 2vh;
+    background-color: #080C16;
+    box-shadow: 0vh 0vh 0.2vh black;
+    display: none;
+}
+
+.BlackBackground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0vh;
+    left: 0vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.ProgressbarBase {
+    width: 23.8vh;
+    height: 2vh;
+    margin-top: 1vh;
+    left: 1.9vh;
+    border-radius: 0.4vh;
+    background-color: #2B3D07;
+    overflow: hidden;
+}
+
+.Progressbar {
+    width: 100%;
+    height: 100%;
+    top: 0vh;
+    left: 0vh;
+    background-color: #769719;
+}
+
+.KeyButtonArea {
+    width: 23.8vh;
+    height: auto;
+    margin-top: 1vh;
+    left: 1.9vh;
+    display: grid;
+}
+
+.Button {
+    height: 5vh;
+    border-radius: 0.2vh;
+    background-color: #080C16;
+}
+
+.Button:hover {
+    background-color: #0e121f;
+}
+
+.Button:active {
+    background-color: #154619;
+}
+
+.ButtonFont {
+    position: relative;
+    width: 100%;
+    left: 0vh;
+    top: 0.9vh;
+    text-align: center;
+    font-family: digital;
+    font-size: 3vh;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.CurrentKeys {
+    width: 23.8vh;
+    left: 1.9vh;
+    top: 2vh;
+    text-align: right;
+    font-family: digital;
+    font-size: 4vh;
+    color: white;
+}
+
+.Countdown {
+    position: absolute;
+    width: 100%;
+    left: 0vh;
+    top: 13vh;
+    text-align: center;
+    font-family: digital;
+    font-size: 10vh;
+    color: white;
+}
+
+.Countdown2 {
+    position: absolute;
+    width: 100%;
+    height: 2vh;
+    top: 20vh;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13vh;
+    font-weight: 600;
+}
+
+.ResultBanner {
+    position: relative;
+    width: 75%;
+    height: 4vh;
+    top: 13vh;
+    margin: auto;
+    background-color: #769719;
+    overflow: hidden;
+}
+
+.ResultText {
+    position: absolute;
+    width: 50%;
+    height: 2.3vh;
+    left: 4.5vh;
+    top: 0.8vh;
+    text-align: left;
+    font-family: fantasy;
+    font-size: 1.75vh;
+    color: white;
+}
+
+.TriesBar {
+    width: 23.8vh;
+    height: 2vh;
+    top: 1.0vh;
+    left: 1.9vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0.1vh, 1fr));
+    gap: 1vh;
+}
+
+.Tries {
+    border-radius: 0.4vh;
+    background-color: #2B3660;
+}
+
+.SkillCheckBar {
+    height: 50vh;
+    background-color: #491918;
+}
+
+.SC_CorrectKey {
+    position: relative;
+    width: auto;
+    top: 23vh;
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    text-shadow: 0vh 0vh 0.2vh black;
+}
+
+.TimerText {
+    position: relative;
+    width: 100%;
+    height: 2vh;
+    padding-top: 1vh;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    font-weight: 600;
+}
+
+.ThermiteBox {
+    background-color: #0d1320;
+    border: 0.1vh solid #172136;
+    border-radius: 0.25vh;
+}
+
+.ThermiteBox:hover {
+    border: 0.2vh solid #819186;
+    border-radius: 0vh;
+}
+
+#SkillBarMinigame {
+    position: relative;
+    top: 90vh;
+    width: 50vh;
+    height: 4vh;
+    margin: auto;
+    display: none;
+}
+
+.SkillBarText {
+    position: relative;
+    width: 100%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vh;
+    font-weight: 600;
+    padding-bottom: 0.5vh;
+    text-shadow: 0vh 0vh 0.5vh black;
+}
+
+.PBSkillArea {
+    position: absolute;
+    top: 0vh;
+    height: 100%;
+    width: 0%;
+    background-color: #769719;
+}
+
+.KeyCode {
+    width: 100%;
+    text-align: center;
+    font-family: digital;
+    font-size: 3vh;
+    color: white;
+}
+
+.enter {
+    margin-top: 1vh;
+    width: 70%;
+    height: 4vh;
+    background-color: rgb(146, 146, 146);
+    right: 0vh;
+    float: right;
+    border-radius: 0vh 0.5vh 0.5vh 0vh;
+}
+
+.enter:hover {
+    filter: brightness(75%);
+}
+
+.backspace {
+    margin-top: 1vh;
+    width: 30%;
+    height: 4vh;
+    background-color: rgb(146, 146, 146);
+    border-radius: 0.5vh 0vh 0vh 0.5vh;
+    left: 0vh;
+}
+
+.backspace:hover {
+    filter: brightness(75%);
+}
+
+i {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 2vh;
+    top: 1vh;
+    color: white;
+}
+
+.IconList {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.ColorPickerInput {
+    position: relative;
+    display: block;
+    margin: auto;
+    height: 2.5vh;
+    width: 20vh;
+    border: none;
+    background-color: #1e2a42;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    font-weight: 600;
+    margin-top: 1vh;
+    padding: 0.5vh;
+    margin-bottom: 2vh;
+}
+
+.ColorPickerInput:hover {
+    background-color: #293753;
+}
+
+.ColorPickerInput:focus {
+    outline: none;
+}
+
+.MinesDoneBtn {
+    position: relative;
+    top: 1vh;
+    width: 20vh;
+    margin: auto;
+    margin-top: 0.25vh;
+    background-color: #257cad;
+    border-radius: 0.5vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2vh;
+    font-weight: 600;
+    padding: 1vh;
+}
+
+.MinesDoneBtn:hover {
+    background-color: #44abe7;
+}

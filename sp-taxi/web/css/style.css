@@ -1,0 +1,731 @@
+@import url('https://fonts.cdnfonts.com/css/akrobat');
+
+body {
+  font-family: "Akrobat"; font-size: 16px; text-rendering: optimizeLegibility; font-weight: initial;
+  background: transparent;
+  overflow: hidden;
+  user-select: none; -webkit-user-drag: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  opacity: 0.7;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #3d3d3d;
+}
+
+::-webkit-scrollbar-track-piece:start {
+  margin-top: 0px; 
+}
+
+::-webkit-scrollbar-track-piece:end {
+  margin-bottom: 10px;
+}
+
+img {
+	-webkit-user-drag: none;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  background: linear-gradient(30deg, #61f4ff7a, #1c78867a);
+}
+
+.wrapper {
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  width: 40%;
+  height: 60%;
+  background: url("../img/background.png");
+  background-size: cover;
+  transform:
+  perspective(75em)
+  rotateY(7deg);
+}
+
+.wrapper h2 {
+    position: absolute;
+    width: 50%;
+    height: 20%;
+    top: 5%;
+    left: 5%;
+    font-size: 2vh;
+    letter-spacing: .1vh;
+    text-transform: uppercase;
+    font-family: 'Akrobat ExtraBold';
+    text-align: left;
+    color: rgb(39, 39, 39);
+}
+
+.wrapper h4 {
+    position: absolute;
+    width: 50%;
+    height: 20%;
+    top: 30%;
+    left: 5%;
+    font-size: 2vh;
+    letter-spacing: .1vh;
+    text-transform: uppercase;
+    font-family: 'Akrobat ExtraBold';
+    text-align: left;
+    color: rgb(39, 39, 39);
+}
+
+.wrapper h5 {
+    position: absolute;
+    word-break: normal;
+    width: 71%;
+    height: 35%;
+    top: 34%;
+    left: 5%;
+	overflow: auto;
+	overflow-x: hidden;
+    font-size: 2.5vh;
+    letter-spacing: .1vh;
+    font-family: 'Akrobat';
+    font-weight: 100;
+    text-align: left;
+    color: rgb(39, 39, 39);
+}
+
+.wrapper h5::-webkit-scrollbar {
+    width: 5px;
+}
+  
+.wrapper h5::-webkit-scrollbar-track {
+  background: #2e363698; 
+}
+   
+.wrapper h5::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 5px;
+}
+  
+.wrapper h5::-webkit-scrollbar-thumb:hover {
+    opacity: 1;
+}
+
+br { content: ""; display: block; margin: 0.3rem; }
+
+.wrapper #requirements {
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 85%;
+    height: 15%;
+    left: 5%;
+    top: 13%;
+}
+
+.wrapper #requirements .item {
+    position: relative;
+    display: inline-table;
+    margin-bottom: 1%;
+    top: 0%;
+    width: 20%;
+    left: 2.5%;
+    height: 73%;
+    margin-right: 4%;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    appearance: none;
+    background-color: rgba(0, 0, 0, 0.438);
+}
+
+.wrapper #requirements .item span {
+    position: absolute;
+    left: 7%;
+    top: 15%;
+    text-transform: uppercase;
+    font-size: 1.7vh;
+    color: #edcc2d;
+    letter-spacing: .1vh;
+    font-family: "Akrobat Bold";
+}
+
+.wrapper #requirements::-webkit-scrollbar {
+    width: 5px;
+}
+  
+.wrapper #requirements::-webkit-scrollbar-track {
+  background: #2e363698; 
+}
+   
+.wrapper #requirements::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 5px;
+}
+  
+.wrapper #requirements::-webkit-scrollbar-thumb:hover {
+    opacity: 1;
+}
+
+.wrapper button {
+  align-items: center;
+  appearance: none;
+  background-color: #3d3d3d;
+  border-radius: 4px;
+  border-width: 0;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Akrobat Bold";
+  height: 15%;
+  letter-spacing: .2vh;
+  top: 80%;
+  left: 5%;
+  text-transform: uppercase;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  margin-right: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: all .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  cursor: default;
+}
+
+.wrapper button:hover {
+  outline: rgba(82, 77, 77, 0.5) solid 4px;
+}
+
+/* WRAPPER 2 */
+
+.wrapper-2 {
+  position: absolute;
+  left: 19%;
+  top: 22.5%;
+  width: 19%;
+  height: 55%;
+  background: url("../img/background2.png");
+  background-size: cover;
+  transform:
+  perspective(75em)
+  rotateY(-10deg);
+}
+
+.wrapper-2 h1 {
+  position: absolute;
+  width: 50%;
+  height: 20%;
+  top: 10%;
+  left: 25%;
+  font-size: 1.5vh;
+  letter-spacing: .2vh;
+  text-transform: uppercase;
+  font-family: 'Akrobat Black';
+  text-align: center;
+  color: #edcc2d;
+}
+
+.wrapper-2 h2 {
+  font-size: 2vh;
+  letter-spacing: .1vh;
+  text-transform: uppercase;
+  font-family: 'Akrobat SemiBold';
+  text-align: right;
+  color: rgb(219, 219, 219);
+}
+
+.wrapper-2 h3 {
+  font-size: 3vh;
+  letter-spacing: .1vh;
+  text-transform: uppercase;
+  font-family: 'Akrobat Bold';
+  text-align: left;
+  color: white;
+}
+
+.wrapper-2 h4 {
+  margin-top: -5%;
+  font-size: 2.4vh;
+  letter-spacing: .1vh;
+  text-transform: uppercase;
+  font-family: 'Akrobat Black';
+  text-align: center;
+  color: white;
+}
+
+.wrapper-2 span {
+  position: absolute;
+  width: 40%;
+  height: 20%;
+  top: 76%;
+  left: 29%;
+  font-size: 5vh;
+  letter-spacing: .1vh;
+  text-transform: uppercase;
+  font-family: 'Akrobat Black';
+  text-align: center;
+  color: black;
+}
+
+.wrapper-2 #charactername {
+  text-transform: uppercase;
+}
+
+
+.wrapper-2 button {
+	position: relative;
+	min-height: 6vh;
+	top: 40%;
+	left: 30%;
+	padding-left: .8vw;
+	padding-right: .8vw;
+	font-size: 1.5rem;
+	font-family: 'Akrobat ExtraBold';
+	color: white;
+	background: #c4ae31;
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	transition: .4s;
+	margin-right: 20px;
+	text-align: center;
+}
+
+.wrapper-2 button:hover {
+	color: #c4ae31;
+	background: white;
+}
+
+/* VEHICLE RENT */
+#rentvehicle {
+  position: absolute;
+  width: 35%;
+  height: 65%;
+  left: 30%;
+  top: 15%;
+  justify-content: center;
+  text-align: center;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, white, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+#rentvehicle h1 {
+  position: relative;
+  font-family: 'Akrobat Black';
+  color: white;
+  top: 18%;
+  font-size: 2.8rem;
+}
+
+#rentvehicle h2 {
+  position: relative;
+  font-family: 'Akrobat SemiBold';
+  color: white;
+  top: 19%;
+  margin: 1px;
+}
+
+#rentvehicle #price {
+  color: #ffde2a;
+}
+
+#rentvehicle #rent {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  width: auto;
+  height: auto;
+  min-width: 5vw;
+  min-height: 8vh;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Akrobat Black';
+  color: #232b42;
+  background-color: #ffde2a;
+  font-size: 1.3rem;
+  top: 24%;
+  right: 1%;
+  transition: all .6s;
+}
+
+#rentvehicle #cancel {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  width: auto;
+  height: auto;
+  min-width: 7vw;
+  min-height: 8vh;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Akrobat Black';
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 1.3rem;
+  top: 24%;
+  left: 1%;
+  transition: all .6s;
+}
+
+#rentvehicle button:hover {
+  transform: scale(1.1);
+}
+
+/* VEHICLE TIMER */
+#vehicletimer h1 {
+  position: absolute;
+  top: 68.5%;
+  left: 3%;
+  color: white;
+  text-align: left;
+  letter-spacing: .02rem;
+  font-family: 'Akrobat ExtraBold';
+  font-size: 1.2rem;
+}
+
+#vehicletimer i {
+  position: absolute;
+  top: 70%;
+  left: 1%;
+  text-align: left;
+  font-size: 1.8rem;
+}
+
+#vehicletimer h1 br {
+  display: block;
+  margin: 0px 0;
+}
+
+/* BUYING COMPANY */
+#dbuy_company {
+  position: absolute;
+  width: 35%;
+  height: 65%;
+  left: 30%;
+  top: 15%;
+  justify-content: center;
+  text-align: center;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, white, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+#dbuy_company h1 {
+  position: relative;
+  font-family: 'Akrobat Black';
+  color: white;
+  top: 18%;
+  font-size: 2.8rem;
+}
+
+#dbuy_company h2 {
+  position: relative;
+  font-family: 'Akrobat SemiBold';
+  color: white;
+  top: 19%;
+  margin: 1px;
+}
+
+#dbuy_company #price_company {
+  color: #ffde2a;
+}
+
+#dbuy_company #buy {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  width: auto;
+  height: auto;
+  min-width: 5vw;
+  min-height: 8vh;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Akrobat Black';
+  color: #232b42;
+  background-color: #ffde2a;
+  font-size: 1.3rem;
+  top: 24%;
+  right: 1%;
+  transition: all .6s;
+}
+
+#dbuy_company #cancel_buy {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  width: auto;
+  height: auto;
+  min-width: 7vw;
+  min-height: 8vh;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Akrobat Black';
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 1.3rem;
+  top: 24%;
+  left: 1%;
+  transition: all .6s;
+}
+
+#dbuy_company button:hover {
+  transform: scale(1.1);
+}
+
+/* TAXIMETER */
+#taximeter h1 {
+  position: absolute;
+  top: 68.5%;
+  left: 3%;
+  color: #ffde2a;
+  text-align: left;
+  letter-spacing: .02rem;
+  font-family: 'Akrobat ExtraBold';
+  font-size: 1.2rem;
+}
+
+#taximeter h2 {
+  position: absolute;
+  top: 71.5%;
+  left: 2%;
+  color: rgba(255, 255, 255, 0.644);
+  text-align: left;
+  letter-spacing: .02rem;
+  font-family: 'Akrobat ExtraBold';
+  font-size: 1rem;
+}
+
+#taximeter #taximeter_earned {
+  margin-left: 50px;
+  color: white;
+  font-size: 1.4rem;
+}
+
+#taximeter i {
+  position: absolute;
+  top: 70%;
+  left: 1.5%;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+#taximeter h1 br {
+  display: block;
+  margin: 0.5px 0;
+}
+
+/*/ taxi_orders START /*/
+
+#taxi_orders {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-drag: none;
+  background: linear-gradient(
+    120deg,
+    rgba(35, 65, 75, .7) 0%,
+    rgba(39, 54, 82, .7) 100%
+  );
+}
+
+#taxi_orders #background {
+  position: relative;
+  width: 55%;
+  height: 65%;
+  left: 36%;
+  top: 20%;
+  background-color: black;
+  transform: perspective(75em) rotateY(7deg) rotateZ(-.5deg);
+}
+
+#taxi_orders #background img {
+  width: 100%;
+  height: 100%;
+}
+
+#taxi_orders #private_orders {
+  position: relative;
+  width: 18%;
+  height: 24%;
+  left: 13%;
+  bottom: 35%;
+  background-color: black;
+  transform: perspective(10em) rotateY(-6deg);
+}
+
+#taxi_orders #private_orders img {
+  width: 100%;
+  height: 100%;
+}
+
+#taxi_orders h1 {
+  position: relative;
+  bottom: 90%;
+  left: 38%;
+  font-family: "Akrobat ExtraBold";
+  font-size: 2.4rem;
+  color: #2c2811;
+  letter-spacing: 3px;
+}
+
+#taxi_orders h2 {
+  position: absolute;
+  bottom: 54%;
+  left: 16%;
+  width: 0%;
+  font-family: "Akrobat Bold";
+  font-size: 2rem;
+  color: #2f333a;
+  transform: perspective(10em) rotateZ(-1deg);
+}
+
+#taxi_orders #open {
+  position: absolute;
+  top: 45%;
+  left: 16%;
+  font-family: "Akrobat Regular";
+  font-size: 1.2rem;
+  color: #2f333a;
+  transform: perspective(10em) rotateZ(-1deg);
+}
+
+#taxi_orders h3 {
+  position: relative;
+  bottom: 101%;
+  left: 76.5%;
+  text-align: left;
+  font-family: "Akrobat Bold";
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+
+#taxi_orders h4 {
+  position: relative;
+  bottom: 110.75%;
+  left: 80.5%;
+  font-family: "Akrobat ExtraBold";
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+#orders {
+  overflow: auto;
+  position: absolute;
+  width: 51%;
+  height: 50%;
+  top: 33%;
+  left: 36.5%;
+}
+
+table {
+  font-family: "Akrobat";
+  font-weight: bold;
+  color: black;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 28px;
+  font-size: 1.5rem;
+  max-width: 22vw;
+  text-align: center;
+  font-family: 'Akrobat Bold';
+}
+
+th {
+  background-color: #0077b6;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding-bottom: 0px;
+}
+
+thead th {
+  background-color: transparent;
+  color: rgb(117, 117, 117);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+td .btn-accept {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 14px 30px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: "Akrobat Bold";
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-left: 10%;
+  cursor: default;
+}
+
+td .btn-accept:hover {
+  color: white;
+  font-weight: bold;
+  background-color: rgb(0, 0, 0);
+}
+
+#taxi_orders #gov_orders {
+  position: relative;
+  width: 18%;
+  height: 24%;
+  left: 15%;
+  bottom: 33%;
+  background: #2e323a;
+  transform: perspective(10em) rotateY(6deg);
+}
+
+#taxi_orders #gov_orders h2 {
+  color: white;
+  top: 10%;
+  left: 8%;
+}
+
+#taxi_orders #gov_orders #open {
+  color: white;
+  top: 60%;
+  left: 9%;
+}

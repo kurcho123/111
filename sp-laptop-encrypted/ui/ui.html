@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./notify.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>REP TABLET</title>
+  </head>
+  <body style="background-color: none !important">
+    <!-- Tablet Notification -->
+    <div class="__tablet--notification-container">
+      <div class="tablet-notif-header">
+        <div class="title">House Robbery</div>
+      </div>
+
+      <div class="__tablet--notification-top">
+        <div class="notification-title">
+          Обери шкафоветеОбери шкафоветеОбери шкафоветеОбери шкафоветеОбери
+          шкафоветеОбери шкафоветеОбери шкафовете
+        </div>
+        <div class="notification-text">
+          <span class="status-message">Статус:</span>
+          <span class="status-value">0/15</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tablet" id="tablet">
+      <!-- <div class="overlay"></div> -->
+      <div class="tablet__border animate__animated animate__fadeIn">
+        <div class="tablet__container">
+          <div class="tablet__wrapper" id="main-screen">
+            <div class="tablet__apps">
+              <div
+                class="tablet__app--item animate__animated animate__fadeInUp animate__delay-7s"
+                id="job-app"
+              >
+                <!-- <i
+                  class="fa-solid fa-address-book app-icon"
+                  style="color: #38a2e5 !important"
+                ></i> -->
+                <img src="./imgs/app/job_app.png" alt="" class="app-icon" />
+                <p class="tablet__app--content">Контакти</p>
+              </div>
+              <div
+                class="tablet__app--item animate__animated animate__fadeInUp animate__delay-7s blocked"
+              >
+                <i class="fa-solid fa-car app-icon"></i>
+                <p class="tablet__app--content">Boosting</p>
+              </div>
+              <div
+                class="tablet__app--item animate__animated animate__fadeInUp animate__delay-7s blocked"
+              >
+                <i class="fa-solid fa-wallet app-icon"></i>
+                <p class="tablet__app--content">Wallet</p>
+              </div>
+              <div
+                class="tablet__app--item animate__animated animate__fadeInUp animate__delay-7s blocked"
+              >
+                <i class="fa-solid fa-question app-icon"></i>
+                <p class="tablet__app--content">?</p>
+              </div>
+              <div
+                class="tablet__app--item animate__animated animate__fadeInUp animate__delay-7s blocked"
+              >
+                <i class="fa-solid fa-question app-icon"></i>
+                <p class="tablet__app--content">?</p>
+              </div>
+              <div
+                class="tablet__app--item animate__animated animate__fadeInUp animate__delay-7s blocked"
+              >
+                <i class="fa-solid fa-question app-icon"></i>
+                <p class="tablet__app--content">?</p>
+              </div>
+              <div
+                class="tablet__app--item animate__animated animate__fadeInUp animate__delay-7s blocked"
+              >
+                <i class="fa-solid fa-question app-icon"></i>
+                <p class="tablet__app--content">?</p>
+              </div>
+            </div>
+            <img
+              src="./imgs/logo.png"
+              alt=""
+              class="logo animate__animated animate__fadeIn animate__delay-5s"
+            />
+            <div class="tablet__footer">
+              <img
+                src="./imgs/logo.png"
+                alt=""
+                class="tablet__footer__logo animate__animated animate__fadeInUp animate__delay-5s"
+              />
+              <div class="tablet__footer__items middle">
+                <div
+                  class="tablet__app--item animate__animated animate__fadeInUp animate__delay-6s"
+                >
+                  <i class="fa-solid fa-globe app-icon"></i>
+                  <p class="tablet__app--content">Browser</p>
+                </div>
+                <div
+                  class="tablet__app--item animate__animated animate__fadeInUp animate__delay-6s"
+                >
+                  <i class="fa-solid fa-folder-open app-icon"></i>
+                  <p class="tablet__app--content">Explorer</p>
+                </div>
+                <div
+                  class="tablet__app--item animate__animated animate__fadeInUp animate__delay-6s"
+                >
+                  <img src="./imgs/app/bin.png" alt="" class="app-icon" />
+                  <p class="tablet__app--content">Recycle Bin</p>
+                </div>
+              </div>
+
+              <div class="tablet__footer__items">
+                <div class="tray-time">
+                  <div class="time" id="time">06:02</div>
+                  <div class="date" id="date">12/12/1222</div>
+                </div>
+                <div class="tray-option"><i class="fa-solid fa-wifi"></i></div>
+                <div class="tray-option"><i class="fa-solid fa-gear"></i></div>
+                <div class="tray-option"><i class="fa-solid fa-bell"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="tablet__wrapper" id="job-screen">
+            <div class="top-bar">
+              <div class="app-info">
+                <img
+                  src="./imgs/app/job_app.png"
+                  alt=""
+                  class="app-info-icon"
+                />
+                <span>Контакти</span>
+              </div>
+              <div class="app-actions">
+                <div class="tablet__back--mainscreen">
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+              </div>
+            </div>
+            <div class="__tablet">
+              <div class="__tablet--header">
+                <div class="contracts-info">
+                  <img
+                    src="./imgs/app/job_app.png"
+                    alt=""
+                    class="contracts-logo animate__animated animate__fadeInLeft"
+                  />
+                  <div
+                    class="contracts-title animate__animated animate__fadeInLeft"
+                  >
+                    <div class="small">Вашите</div>
+                    <div class="big">Контакти</div>
+                  </div>
+                  <div
+                    class="contracts-desc animate__animated animate__fadeInLeft"
+                  >
+                    <span
+                      >Контакти са хора, с които може да се свържете, за
+                      да</span
+                    >
+                    <span>
+                      работите за тях и да изкарвате пари, репутация и т.н.
+                    </span>
+                  </div>
+                </div>
+                <div class="reputation-info">
+                  <div class="most-reputation smaller">
+                    <div
+                      class="title animate__animated animate__fadeInUp animate__delay-3s"
+                    >
+                      Най-много Репутация За Контакт
+                    </div>
+                    <div
+                      class="name animate__animated animate__fadeInUp animate__delay-3s"
+                      id="most-reputation-c"
+                    >
+                      Lucas Miller
+                    </div>
+                    <div
+                      class="rep-progress animate__animated animate__fadeInUp animate__delay-3s"
+                    >
+                      <div class="info">
+                        <span>Репутация</span>
+                        <span id="most-reputation-t">100/100</span>
+                      </div>
+                      <div class="progress-container">
+                        <div class="progress-line">
+                          <div class="progress" id="most-reputation-p"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="most-reputation bigger">
+                    <div
+                      class="title animate__animated animate__fadeInUp animate__delay-3s"
+                    >
+                      Обща Репутация
+                    </div>
+                    <div
+                      class="name animate__animated animate__fadeInUp animate__delay-3s"
+                    >
+                      Вашата обща репутация представлява Вашето представяне в
+                      индивидуални или групови задачи. Това помага на Вашите
+                      контакти да определят Вашата изпълнителност, отговорност и
+                      точност. Колкото повече задачи изпълнявате в срок и
+                      коректно, толкова повече репутация ще получавате.
+                    </div>
+                    <div
+                      class="rep-progress animate__animated animate__fadeInUp animate__delay-3s"
+                    >
+                      <div class="info">
+                        <span>Репутация</span>
+                        <span id="total-reputation-t">100/100</span>
+                      </div>
+                      <div class="progress-container">
+                        <div class="progress-line">
+                          <div class="progress" id="total-reputation-p"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="title">
+                  <div
+                    class="__tablet--header--left animate__animated animate__fadeInLeft"
+                  >
+                    <i class="fa-solid fa-book-open-reader"></i>
+                    <h3 class="__tablet--header-content">
+                      <span>Списък с</span>
+                      <span>Контакти</span>
+                    </h3>
+                  </div>
+                  <div
+                    class="__tablet--search-container animate__animated animate__fadeInRight"
+                  >
+                    <div class="searchbox">
+                      <input
+                        type="text"
+                        class="search-input"
+                        id="search"
+                        placeholder="Търси Контакт..."
+                        autocomplete="off"
+                      />
+                      <button class="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tablet__job--list animate__animated animate__fadeInUp animate__delay-3s"
+              >
+                <table class="tablet-job-list" id="job-list">
+                  <tr>
+                    <th>Аватар</th>
+                    <th>Име</th>
+                    <th>Работна Позиция</th>
+                    <th>Репутация</th>
+                    <th>GPS</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="tablet__wrapper" id="loader-screen">
+            <div class="loader__wrapper">
+              <div class="loader">
+                <div class="dot"></div>
+              </div>
+              <div class="loader">
+                <div class="dot"></div>
+              </div>
+              <div class="loader">
+                <div class="dot"></div>
+              </div>
+              <div class="loader">
+                <div class="dot"></div>
+              </div>
+              <div class="loader">
+                <div class="dot"></div>
+              </div>
+              <div class="loader">
+                <div class="dot"></div>
+              </div>
+            </div>
+            <div class="svg-container success_icon">
+              <svg
+                class="ft-green-tick"
+                xmlns="http://www.w3.org/2000/svg"
+                height="100"
+                width="100"
+                viewBox="0 0 48 48"
+                aria-hidden="true"
+              >
+                <circle class="circle" fill="#5bb543" cx="24" cy="24" r="22" />
+                <path
+                  class="tick"
+                  fill="none"
+                  stroke="#FFF"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-miterlimit="10"
+                  d="M14 27l5.917 4.917L34 17"
+                />
+              </svg>
+            </div>
+            <div class="text">
+              <p>Please Wait...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./jquery.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./groups.js"></script>
+    <script src="./jobCenter.js"></script>
+  </body>
+</html>

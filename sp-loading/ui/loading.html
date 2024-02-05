@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>UM - Loading Screen</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+      <link rel="stylesheet" href="assets/css/style.css">
+   </head>
+   <body>
+      <video playsinline autoplay muted loop >
+         <source src="./assets/video/loading-video.mp4" type="video/mp4">
+         Your browser does not support the video tag.
+       </video> 
+
+      <img src="./assets/img/bulgar-logo.png" alt="" class="logo">
+
+      <div class="main-title">
+         <div class="title">
+            <span class="steamid">NULL</span>, Добре Дошли В BulgarOG
+         </div>
+
+         <div class="subtitle">Влизате В Сървъра...</div>
+      </div>
+
+      <div class="progress">
+         <div class="progress-value background"></div>
+      </div>
+
+      <audio id="music" src="assets/audio/audio.mp3" autoplay="true" hidden="true" loop="true">
+   </body>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="../config.js"></script>
+   <script src="assets/js/app.js"></script>
+   <script src="assets/js/game.js"></script>
+   <script src="assets/js/snow.js"></script>
+</html>

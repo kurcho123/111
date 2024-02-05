@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="./index.js" type="text/javascript"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Basic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ma Shan Zheng"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="spawn-points"></div>
+
+      <div class="spawn-help">
+        <span class="spawn-title">Избери Локация</span>
+        <span class="spawn-quote"
+          >Който знае да чака, всичко му идва на време.</span
+        >
+        <hr />
+        <div class="spawn-buttons">
+          <button class="spawn-button lastspawn">
+            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="text">Последна Локация</div>
+          </button>
+          <button class="spawn-button apartspawn">
+            <div class="icon"><i class="fa-solid fa-house-user"></i></div>
+            <div class="text">Вашият Апартамент</div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="select-character-type">
+      <img src="./images/char-bg.png" alt="" class="background" />
+      <div class="question">Какъв персонаж ще играете?</div>
+      <div class="options">
+        <div class="option">
+          <input
+            type="radio"
+            id="social"
+            name="persona"
+            value="social"
+            checked
+          />
+          <label for="social" class="option-info">
+            <div class="title">Социален</div>
+            <div class="desc">
+              В разнообразната социална среда на града, създайте връзки, които
+              изграждат сложна мрежа от приятелства и вдъхновение. Създайте
+              собствен бизнес или станете влиятелна фигура в обществото?
+              Изправете се пред предизвикателствата, които ви очакват чрез
+              амбициите на вашия персонаж.
+            </div>
+          </label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="crime" name="persona" value="crime" />
+          <label for="crime" class="option-info">
+            <div class="title">Криминален</div>
+            <div class="desc">
+              Изкачете се на върховете на организираната престъпност чрез своя
+              хладнокръвен ум, брутални дейности, хакерски умения,стратегии или
+              трафика на наркотици. Разработете амбициозни планове за разширение
+              на своята престъпна империя и установете абсолютен контрол над
+              нелегалните операции в града.
+            </div>
+          </label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="police" name="persona" value="police" />
+          <label for="police" class="option-info">
+            <div class="title">Полицай</div>
+            <div class="desc">
+              Чувствате преданост, гледайки полицейската униформа? Отличавате се
+              с неотклонима целеустременост и стремеж към правосъдие, докато
+              поддържате баланс между справедливост и човечност? Поддържайте
+              добри отношения с колегите си, изграждайте съюзи и взаимопомощ в
+              борбата с престъпността. Изчистете улиците от престъпниците и
+              поддържайте закона справедливо.
+            </div>
+          </label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="medic" name="persona" value="medic" />
+          <label for="medic" class="option-info">
+            <div class="title">Медик</div>
+            <div class="desc">
+              Вие сте състрадателен и самоотвержен човек, който излъчва
+              спокойствие и увереност? Квалифицирайте се на високо ниво в
+              отделенията по спешна медицина и предоставете неотложна медицинска
+              помощ в бързо реагиращи бедствия и случаи. Подобрете системата за
+              здравеопазване и развитие на нови методи за лечение с вашия опит в
+              медицинската сфера.
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="question-desc">
+        <span
+          >Създайте задълбочена история на персонажа, която описва миналото и
+          мотивациите му.</span
+        >
+      </div>
+      <button class="confirm">Потвърди моя избор</button>
+    </div>
+  </body>
+</html>

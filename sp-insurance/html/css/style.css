@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: transparent;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+#vehiclerc,
+#healthinsurance,
+#vehicleinsurance,
+#vehiclemot {
+    display: none;
+}
+
+.container {
+    position: absolute;
+    width: 40vh;
+    right: 1rem;
+    top: 20%;
+    transform: translateY(-20%);
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.heading-text {
+    position: absolute;
+    text-align: center;
+    top: 2rem;
+    left: 76%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.title {
+    color: #f1ebd3;
+    font-size: 1rem;
+    background-color: #000000;
+    margin: 0;
+    margin-right: 0.3vh;
+}
+
+.title-license {
+    color: white;
+    font-size: 1rem;
+    background-color: #555555;
+    margin: 0;
+    margin-right: 0.3vh;
+}
+
+.title-mot {
+    color: white;
+    font-size: 1rem;
+    background-color: #555555;
+    margin: 0;
+    margin-right: 0.3vh;
+}
+
+.title-health {
+    color: #f1ebd3;
+    font-size: 1rem;
+    background-color: #000000;
+    margin: 0;
+    margin-right: 0.3vh;
+}
+
+.subtitle {
+    margin: 0;
+    font-size: .6rem;
+}
+
+.subtitle-health {
+    margin: 0;
+    font-size: .6rem;
+}
+
+p {
+    margin: 0;
+}
+
+.red {
+    color: red;
+}
+
+.text-details {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    font-size: .8rem;
+    font-weight: 900;
+    transform: translate(-35%, -50%);
+}
+
+.text-details-insurance {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: .8rem;
+    font-weight: 900;
+    color: white;
+    transform: translate(-10%, -50%);
+}
+
+.text-details-mot {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: .8rem;
+    font-weight: 900;
+    color: white;
+    transform: translate(-10%, -50%);
+}
+
+.text-details-health {
+    position: absolute;
+    top: 53%;
+    left: 35%;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #777777;
+    transform: translate(-10%, -50%);
+}
+
+span {
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.subtitle-insurance {
+    color: white;
+    margin: 0;
+    font-size: .6rem;
+}
+
+.subtitle-mot {
+    color: white;
+    margin: 0;
+    font-size: .6rem;
+}

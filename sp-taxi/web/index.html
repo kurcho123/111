@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div class="background"></div>
+        <div class="wrapper-2">
+            <h1>TAXI PARK</h1>
+            <h2 style="position: absolute; width: 0%; left: 20%; top: 45%; text-align: right;">PRICE FOR TRANSPORT VEHICLE</h2>
+            <h2 style="margin-top: 34%; text-align: center;">OWNER</h2>
+            <h3 id="transportvehicleprice" style="width: 50%; font-family: 'Akrobat ExtraBold'; font-size: 2vh; left: 24%; top: 48%; text-align: center;"></h3>
+            <h4 id="charactername"></h4>
+            <h2 id="pricevehicle" style="position: absolute; color: white; font-family: 'Akrobat Bold'; width: 0%; left: 60%; top: 48%; font-size: 2.2rem; text-align: left;">$500</h4>
+            <button id="buy_company">BUY COMPANY</button>
+        </div>
+        <div class="wrapper">
+            <h2>INFORMATION AND REQUIREMENTS</h2>
+            <div id="requirements">
+            </div>
+            <h4>JOB DESCRIPTION</h4>
+            <h5 id="jobdescription"></h5>
+        </div>
+    </div>
+    <div id="rentvehicle">
+        <h1>VEHICLE RENTAL</h1>
+        <h2>Do you really want to rent a vehicle?</h2>
+        &nbsp;
+        <h2>Price: <span id="price">$500</span></h2>
+        <button id="rent">RENT</button>
+        <button id="cancel">CANCEL</button>
+	</div>
+  <div id="dbuy_company">
+        <h1>BUY COMPANY</h1>
+        <h2>Do you really want to buy this taxi company?</h2>
+        &nbsp;
+        <h2>Price: <span id="price_company">$500</span></h2>
+        <button id="buy">BUY</button>
+        <button id="cancel_buy">CANCEL</button>
+	</div>
+    <div id="vehicletimer">
+        <i class="fa-sharp fa-regular fa-clock fa-spin" style="color: #c64e4e;"></i>
+        <h1>VEHICLE RENTAL<br>WILL END IN <span id="timer">300</span> SECONDS</h1>
+    </div>
+    <div id="taximeter">
+        <i class="fas fa-taxi" style="color: #ffde2a;"></i>
+        <h1>TAXIMETER <span id="taximeter_state">OFF</span></h1>
+        <h2>EARNED <span id="taximeter_earned">$0</span></h2>
+    </div>
+    <div id="bigtaxi_orders">
+        <div id="taxi_orders">
+          <div id="background">
+            <img src="img/background.png" draggable="false">
+          </div>
+          <div id="private_orders">
+            <img src="img/background.png" draggable="false">
+          </div>
+          <h2>Private orders</h2>
+          <span id="open">OPEN</span>
+          <div id="gov_orders">
+            <h2>Government orders</h2>
+            <span id="open">OPEN</span>
+          </div>
+          <h1>TAXI PARK</h1>
+          <h3 id="free_orders_count"></h3>
+          <h4>ORDERS<br>WAITING FOR</h4>
+        </div>
+        <div id="orders">
+          <table>
+            <thead>
+              <tr>
+                <th>Customer</th>
+                <th>Distance</th>
+              </tr>
+            </thead>
+            <tbody id="cont">
+            </tbody>
+          </table>
+        </div>
+      </div>
+</body>
+</html>

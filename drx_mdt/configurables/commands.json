@@ -1,0 +1,12 @@
+[
+  ["/radio [100-400]", "Join a Radio Channel"],
+  ["/radio off", "Turn off the radio"],
+  ["/jobradio", "Toggle your job radio"],
+  ["Talk on Radio", "Y (Change in Settings > FiveM)"],
+  ["Change Proximity", "HOME (Change in Settings > FiveM)"],
+  ["Change Active Radio Channel", "DELETE (Change in Settings > FiveM)"],
+  ["/radiovol [1-100]", "Control the volume of voices on the radio"],
+  ["/callvol [1-100]", "Control the volume of voices on a phone call"],
+  ["/radiobeepvol [1-100]", "Control the volume of radio beeps"],
+  ["/radiopowervol [1-100]", "Control the volume of radio power sounds"]
+]

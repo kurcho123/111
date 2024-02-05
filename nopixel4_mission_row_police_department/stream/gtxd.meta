@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CMapParentTxds>
+	<txdRelationships>
+	<Item>
+			<parent>nve_op_lspd_int_txd_4</parent>
+			<child>nve_op_lspd_int_txd_3</child>
+		</Item>
+	<Item>
+			<parent>nve_op_lspd_int_txd_3</parent>
+			<child>nve_op_lspd_int_txd_2</child>
+		</Item>
+		<Item>
+			<parent>nve_op_lspd_int_txd_2</parent>
+			<child>nve_op_lspd_int_txd</child>
+		</Item>
+		<Item>
+			<parent>nve_op_lspd_int_txd</parent>
+			<child>nve_op_lspd_int_gf_txd</child>
+		</Item>
+		<Item>
+			<parent>nve_op_lspd_int_txd</parent>
+			<child>nve_op_lspd_int_ef_txd</child>
+		</Item>
+		<Item>
+			<parent>nve_op_lspd_txd</parent>
+			<child>nve_op_lspd_bld_txd</child>
+		</Item>
+		<Item>
+			<parent>nve_op_lspd_ground_txd</parent>
+			<child>nve_op_lspd_bld_txd</child>
+		</Item>
+	</txdRelationships>
+</CMapParentTxds>

@@ -1,0 +1,234 @@
+{
+  "sounds": {
+    "ringtones": [
+      {
+        "key": "GalaxyBells",
+        "name": "Galaxy Bells",
+        "extension": "mp3"
+      },
+      {
+        "key": "Ring",
+        "name": "Ring",
+        "extension": "mp3"
+      },
+      {
+        "key": "MeGustaTu",
+        "name": "Me Gusta Tu",
+        "extension": "mp3"
+      },
+      {
+        "key": "2pac_all_eyes_on_me",
+        "name": "2Pac - All Eyes On Me",
+        "extension": "mp3"
+      },
+      {
+        "key": "azis_motel",
+        "name": "Azis - Motel",
+        "extension": "mp3"
+      }
+    ],
+    "notifications": [
+      {
+        "key": "Spaceline",
+        "name": "Spaceline",
+        "extension": "mp3"
+      },
+      {
+        "key": "RingRing",
+        "name": "Ring Ring",
+        "extension": "mp3"
+      },
+      {
+        "key": "Whistle",
+        "name": "Tock Tock",
+        "extension": "mp3"
+      }
+    ]
+  },
+  "wallpapers": [
+    {
+      "key": "Graphite",
+      "name": "Graphite",
+      "extension": "png"
+    },
+    {
+      "key": "Lavender",
+      "name": "Lavender",
+      "extension": "png"
+    },
+    {
+      "key": "Mint",
+      "name": "Mint",
+      "extension": "png"
+    },
+    {
+      "key": "Gold",
+      "name": "Gold",
+      "extension": "png"
+    },
+    {
+      "key": "BlackZ4",
+      "name": "BlackZ4",
+      "extension": "webp"
+    },
+    {
+      "key": "GoldZ4",
+      "name": "GoldZ4",
+      "extension": "webp"
+    },
+    {
+      "key": "PurpleZ4",
+      "name": "PurpleZ4",
+      "extension": "webp"
+    },
+    {
+      "key": "BlueZ4",
+      "name": "BlueZ4",
+      "extension": "webp"
+    }
+  ],
+  "worldClockLocations": {
+    "New York": "America/New_York",
+    "London": "Europe/London",
+    "Paris": "Europe/Paris",
+    "Tokyo": "Asia/Tokyo",
+    "Sydney": "Australia/Sydney",
+    "Los Angeles": "America/Los_Angeles",
+    "New Delhi": "Asia/Kolkata",
+    "Hong Kong": "Asia/Hong_Kong",
+    "Rio de Janeiro": "America/Sao_Paulo",
+    "Mexico City": "America/Mexico_City",
+    "Cape Town": "Africa/Johannesburg",
+    "Stockholm": "Europe/Stockholm",
+    "Hawaii": "Pacific/Honolulu"
+  },
+  "apps": [
+    {
+      "key": "phone",
+      "name": "Phone",
+      "defaultApp": true
+    },
+    {
+      "key": "messages",
+      "name": "Messages",
+      "defaultApp": true
+    },
+    {
+      "key": "settings",
+      "name": "Settings",
+      "defaultApp": true
+    },
+    {
+      "key": "camera",
+      "name": "Camera",
+      "defaultApp": true
+    },
+    {
+      "key": "notes",
+      "name": "Notes",
+      "defaultApp": true
+    },
+    {
+      "key": "clock",
+      "name": "Clock",
+      "defaultApp": true
+    },
+    {
+      "key": "calculator",
+      "name": "Calculator",
+      "defaultApp": true
+    },
+    {
+      "key": "gallery",
+      "name": "Gallery",
+      "defaultApp": true
+    },
+    {
+      "key": "contacts",
+      "name": "Contacts",
+      "defaultApp": true
+    },
+    {
+      "key": "email",
+      "name": "Mail",
+      "defaultApp": true
+    },
+    {
+      "key": "maps",
+      "name": "Maps",
+      "defaultApp": true
+    },
+    {
+      "key": "homes",
+      "name": "Home",
+      "defaultApp": true
+    },
+    {
+      "key": "ypay",
+      "name": "YPay",
+      "defaultApp": true
+    },
+    {
+      "key": "garage",
+      "name": "Garage",
+      "defaultApp": true
+    },
+    {
+      "key": "playstore",
+      "name": "Play Store",
+      "defaultApp": true
+    },
+    {
+      "key": "y",
+      "name": "Y",
+      "description": "Social • News • Entertainment",
+      "defaultApp": false
+    },
+    {
+      "key": "2048",
+      "name": "2048",
+      "game": true,
+      "description": "Puzzle • Merge • Strategy",
+      "defaultApp": false
+    },
+    {
+      "key": "tictactoe",
+      "name": "TicTacToe",
+      "game": true,
+      "description": "Puzzle • Board",
+      "defaultApp": false
+    },
+    {
+      "key": "ludodash",
+      "name": "Ludo Dash",
+      "game": true,
+      "description": "Board • Strategy",
+      "defaultApp": false
+    },
+    {
+      "key": "ybuy",
+      "name": "YBuy",
+      "description": "Shopping • Deals • Offers",
+      "defaultApp": false
+    },
+    {
+      "key": "groups",
+      "name": "Groups",
+      "description": "Activities • Events",
+      "defaultApp": false
+    },
+    {
+      "name": "Subway Surfers",
+      "key": "subwaysurfers",
+      "game": true,
+      "description": "Action",
+      "defaultApp": false
+    },
+    {
+      "key": "instashots",
+      "name": "Instashots",
+      "description": "Social • News • Entertainment",
+      "defaultApp": false
+    }
+  ]
+}
